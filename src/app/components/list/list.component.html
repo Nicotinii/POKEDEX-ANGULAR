@@ -1,0 +1,41 @@
+<div class="container my-5">
+    <div class="row">
+        <div>
+            <div class="row">
+                <h1 class="mb-4">Pokedex</h1>
+                <div *ngFor="let pokemon of pokemons; let i = index" class="col-md-4">
+                    <div class="card mb-3 list bg-{{getType(pokemon)}}" [routerLink]="['/view', pokemon.name]">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-7 col-sm-8">
+                                    <h5 class="card-title">{{pokemon.name | titlecase}}</h5>
+                                    <span *ngFor="let type of pokemon.types"
+                                        class="badge border rounded-pill me-1 fc-{{type.type.name}}">
+                                        {{type.type.name | titlecase}}
+                                    </span>
+                                </div>
+                                <div class="col-5 col-sm-4">
+                                    <img src="{{pokemon.sprites.front_default}}"
+                                        class="img-fluid img-hov" alt="...">
+                                        <img src="{{pokemon.sprites.back_default}}" alt="{{pokemon.name}}" 
+                                        class="img-fluid img-hov-on bounce" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm text-center">
+            <button class="btn btn-sm btn-secondary" (click)="loadMore()">
+                <div class="spinner-border spinner-border-sm" role="status" *ngIf="loading"></div>
+                {{loading ? 'Loading...' : 'Load More'}}
+            </button>
+        </div>
+    </div>
+</div>
+
+
+

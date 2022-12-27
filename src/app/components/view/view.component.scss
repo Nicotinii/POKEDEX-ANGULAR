@@ -1,0 +1,128 @@
+.badge{
+    box-shadow:  inset 3px 3px 5px #00000020,
+    inset -3px -3px 5px #ffffff30;
+}
+
+
+
+
+.img-hov-on{
+	position: absolute;
+	width: 25%;
+    top: 12%;
+    right: 22%;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.5s;
+	transform-style: preserve-3d;
+	transform: rotateY(180deg);
+
+	}
+
+	.col-sm-6:hover .img-hov-on{
+		transform: rotateY(0deg);
+		opacity: 1;
+}
+.col-sm-6:hover .img-hov{
+	transform: rotateY(180deg);
+	opacity: 0;
+}
+
+.col-sm-6 .img-hov{
+	transition: opacity 0.2s, transform 0.5s;
+	opacity: 1;
+}
+
+
+
+
+
+.bounce:hover {
+	animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+	10% { transform:translateY(0%); }
+	20% { transform:translateY(-15%); }
+	30% { transform:translateY(0%); }
+	35% { transform:translateY(-7%); }
+	37% { transform:translateY(0%); }
+	39% { transform:translateY(-3%); }
+	40% { transform:translateY(0); }
+  }
+
+.fc-normal {
+	background: #A8A77A;
+}
+
+.fc-fire {
+	background: #EE8130;
+}
+
+.fc-water {
+	background: #6390F0;
+}
+
+.fc-electric {
+	background: #F7D02C;
+}
+
+.fc-grass {
+	background: #7AC74C;
+}
+
+.fc-ice {
+	background: #96D9D6;
+}
+
+.fc-fighting {
+	background: #C40E28;
+}
+
+.fc-poison {
+	background: #A33EA1;
+}
+
+.fc-ground {
+	background: #E2BF65;
+}
+
+.fc-flying {
+	background: #A98FF3;
+}
+
+.fc-psychic {
+	background: #F95587;
+}
+
+.fc-bug {
+	background: #A6B91A;
+}
+
+.fc-rock {
+	background: #B6A136;
+}
+
+.fc-ghost, .fc-shadow {
+	background: #735797;
+}
+
+.fc-dragon {
+	background: #6F35FC;
+}
+
+.fc-dark {
+	background: #705746;
+}
+
+.fc-steel {
+	background: #B7B7CE;
+}
+
+.fc-fairy {
+	background: #D685AD;
+}
+
+.fc-unknown {
+	background: #aaa;
+}

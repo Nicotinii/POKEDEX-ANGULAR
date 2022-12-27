@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+
+.bg {
+	position: relative;
+}
+
+.custom-shape-divider-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 50px;
+}
+
+.custom-shape-divider-top {
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 30px;
+}
+
+.custom-shape-divider-bottom .shape-fill,
+.custom-shape-divider-top .shape-fill {
+	fill: #FFFFFF;
+}
+
+.card {
+	cursor: pointer;
+}
+
+.list {
+	box-shadow: inset 25px -25px 50px -25px rgba(0, 0, 0, 0.250),
+		inset -25px 25px 50px -25px rgba(255, 255, 255, 0.250),
+		-15px 15px 25px 0px rgba(0, 0, 0, 0.250),
+		15px -15px 25px 0px rgba(255, 255, 255, 0.250);
+	color: #fff;
+}
+
+.bg-normal {
+	background-color: #A8A77A;
+}
+
+.bg-fire {
+	background-color: #EE8130;
+}
+
+.bg-water {
+	background-color: #6390F0;
+}
+
+.bg-electric {
+	background-color: #F7D02C;
+}
+
+.bg-grass {
+	background-color: #7AC74C;
+}
+
+.bg-ice {
+	background-color: #96D9D6;
+}
+
+.bg-fighting {
+	background-color: #C22E28;
+}
+
+.bg-poison {
+	background-color: #A33EA1;
+}
+
+.bg-ground {
+	background-color: #E2BF65;
+}
+
+.bg-flying {
+	background-color: #A98FF3;
+}
+
+.bg-psychic {
+	background-color: #F95587;
+}
+
+.bg-bug {
+	background-color: #A6B91A;
+}
+
+.bg-rock {
+	background-color: #B6A136;
+}
+
+.bg-ghost,
+.bg-shadow {
+	background-color: #735797;
+}
+
+.bg-dragon {
+	background-color: #6F35FC;
+}
+
+.bg-dark {
+	background-color: #705746;
+}
+
+.bg-steel {
+	background-color: #B7B7CE;
+}
+
+.bg-fairy {
+	background-color: #D685AD;
+}
+
+.bg-unknown {
+	background-color: #aaa;
+}
