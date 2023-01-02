@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { PokemonService } from 'src/app/services/pokemon.service';
+import { FlavorTextEntry } from 'src/app/interfaces/pokemon-species';
 
 @Component({
   selector: 'app-view',
@@ -74,6 +75,7 @@ export class ViewComponent implements OnInit {
     return +splitUrl[splitUrl.length - 2];
   }
 
-  
+
+
 
 }

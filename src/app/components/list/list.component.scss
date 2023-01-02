@@ -3,6 +3,29 @@
     inset -3px -3px 5px #ffffff30;
 }
 
+.bg-dark{
+	background-color: #d2232900 !important;
+}
+
+.side-pokedex{
+	background-image: url(pokedexH.svg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 50;
+}
+
+.haut{
+	margin-top: 10%;
+}
+
+.bas{
+
+
+}
+
+
+
 .img-hov-on{
 	position: absolute;
 	width: 25%;

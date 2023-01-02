@@ -1,4 +1,5 @@
 export interface Pokemon {
+  toLocaleLowerCase: any;
   abilities: Ability[];
   base_experience: number;
   forms: Species[];

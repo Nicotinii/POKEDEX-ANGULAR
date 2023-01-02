@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { FlavorTextEntry, PokemonSpecies } from '../interfaces/pokemon-species';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,8 @@ export class PokemonService {
   private url: string = environment.apiUrl + 'pokemon/';
   private _pokemons: any[] = [];
   private _next: string = '';
+    searchFilter: string = '';
+  currentPokemonDescription: FlavorTextEntry[] = [];
 
   constructor(private http: HttpClient) {
   }
@@ -41,6 +44,11 @@ export class PokemonService {
     return this.http.get<any>(url);
   }
 
+  get2G(): Observable<any> {
+    const url = this.next === '' ? `${this.url}?offset=151&limit=100` : this.next;
+    return this.http.get<any>(url);
+  }
+
   getEvolution(id: number): Observable<any> {
     const url = `${environment.apiUrl}evolution-chain/${id}`;
     return this.http.get<any>(url);
@@ -50,4 +58,12 @@ export class PokemonService {
     const url = `${environment.apiUrl}pokemon-species/${name}`;
     return this.http.get<any>(url);
   }
+
+  getDescription(id: string): Observable<any> {
+    const url = `${environment.apiUrl}pokemon-species/${id}`;
+    return this.http.get<any>(url);
+  }
+
+
+  
 }
