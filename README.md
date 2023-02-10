@@ -1,4 +1,8 @@
-# NgPokedex
+# Pokedex Angular
+
+Pon premier projet fonctionnel en angular
+
+# Pokedex
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
